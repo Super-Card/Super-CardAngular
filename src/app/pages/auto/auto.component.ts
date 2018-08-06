@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './auto.component.html',
   styleUrls: ['./auto.component.css']
 })
+
 export class AutoComponent implements OnInit {
 
   constructor() { }
