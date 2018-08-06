@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clothes.component.css']
 })
 export class ClothesComponent implements OnInit {
-
+  title = 'My First Angular App!';
+  
   constructor() { }
 
   ngOnInit() {
