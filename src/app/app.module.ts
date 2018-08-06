@@ -39,7 +39,7 @@ const appRoutes: Routes = [
     ClothesComponent,
     TechComponent,
     RestaurantsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponen
   ],
   bootstrap: [ AppComponent ]
 })
