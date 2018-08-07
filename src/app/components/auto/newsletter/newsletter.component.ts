@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class NewsletterComponent implements OnInit {
 
   constructor() { }
-
+  testAlert() {
+    alert("Newsletter event works");
+  }
   ngOnInit() {
   }
 
