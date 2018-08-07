@@ -1,0 +1,48 @@
+.result-list-item {
+    background-color: #FFFFFC;
+    border: solid 1px #092B75;
+    padding: 0 10px;
+    text-align: center;
+    width: 350px;
+    height: 260px;
+    padding: 5px;
+    margin: 15px;
+    float: left;
+}
+
+.result-list-item:hover {
+    border: solid 1px #FFBF44;;
+    cursor: pointer;
+ }
+
+.brand-img {
+    width: 116px;
+    height: 130px;
+    margin-top:20px;
+    margin-left: 92px;
+    margin-right: 92px;
+    z-index: -1;
+ }
+
+.discount-percent {
+    width: 50px;
+    height: 50px;
+    z-index: 99;
+    padding-right: 0px;
+    float: right;
+}
+
+.logo-partner {
+    width: 70px;
+    height: 70px;
+    padding-left: 0px;
+    float: left;
+    z-index: 99;
+}
+
+.brand-name {
+    color: red;
+    font-size: 20px;
+    padding-top: 5px;
+    z-index: 10;
+}
