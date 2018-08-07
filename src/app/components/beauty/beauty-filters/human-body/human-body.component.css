@@ -1,0 +1,10 @@
+.human-body-img {
+    z-index: 10;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.human-body-img-categories {
+    cursor: pointer;
+}

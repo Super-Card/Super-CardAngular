@@ -1,0 +1,22 @@
+.beauty-filters h3 {
+    color: white;
+    font-size: 16px;
+    font-style: bold;
+    border: solid 1px #092B75;
+    background-color: #1C51C2;
+    margin: 10px 0px 0px 0px;
+    padding: 5px;
+    width: 170px;
+    text-align: center;
+}
+
+.beauty-filters label {
+    display: block;
+    color: black;
+    font-size: 14px bold;
+    width: 170px;
+    padding: 1px;
+    border: solid 1px #FFBF44;
+    background-color: #FFFFFC;
+    cursor: pointer;
+}
