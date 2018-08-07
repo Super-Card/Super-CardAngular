@@ -38,11 +38,11 @@
   </div>
 
   <div>
-    <input type="checkbox" value="Burgas"/> Burgas
+    <input type="checkbox" (click)="this.clothesService.add('Burgas')" value="Burgas"/> Burgas
   </div>
 
   <div>
-    <input type="checkbox" (click)="onClick()" value="Stara Zagora"/> Stara Zagora
+    <input type="checkbox" (click)="this.clothesService.add('Stara Zagora')" value="Stara Zagora"/> Stara Zagora
   </div>
 
   <h2>Discount:</h2>
