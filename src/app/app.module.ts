@@ -24,7 +24,12 @@ import { SelectPeopleComponent } from './components/restaurants/reservations/sel
 import { LocationComponent } from './components/restaurants/reservations/location/location.component';
 import { CompleteReservationComponent } from './components/restaurants/reservations/complete-reservation/complete-reservation.component';
 import { ConfirmationModalComponent } from './components/restaurants/reservations/confirmation-modal/confirmation-modal.component';
+
 import { TechListComponent } from './components/tech/categories/tech-list/tech-list.component';
+import { CountdownComponent } from './components/auto/countdown/countdown.component';
+import { CardCheckComponent } from './components/auto/card-check/card-check.component';
+import { NewsletterComponent } from './components/auto/newsletter/newsletter.component';
+
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -67,7 +72,13 @@ const appRoutes: Routes = [
     LocationComponent,
     CompleteReservationComponent,
     ConfirmationModalComponent,
+
     TechListComponent
+
+    CountdownComponent,
+    CardCheckComponent,
+    NewsletterComponent
+
   ],
   bootstrap: [ AppComponent ]
 })
