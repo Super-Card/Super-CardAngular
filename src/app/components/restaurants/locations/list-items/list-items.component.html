@@ -1,5 +1,5 @@
-<ul>
-  <li *ngFor="let location of this.restaurants.locations" (click)="this.restaurants.setSelectedLocation(location)">
+<div class="locations-list">
+  <button *ngFor="let location of this.restaurants.locations" (click)="this.restaurants.setSelectedLocation(location)" class="locations-list__item">
     {{ location.name }}
-  </li>
-</ul>
+  </button>
+</div>

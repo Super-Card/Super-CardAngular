@@ -1,0 +1,17 @@
+.locations-container {
+    background-color: rgba(229, 229, 229, 0.432);
+    display: flex;
+    flex-direction: row;
+    width: 1150px;
+    margin: auto;
+}
+
+.restaurants-intro {
+    width: 1150px;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.restaurants-intro h1 {
+    text-align: left;
+}

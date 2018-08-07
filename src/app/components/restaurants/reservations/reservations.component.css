@@ -1,0 +1,10 @@
+.reservations-container {
+    width: 1150px;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.reservations-container h1 {
+    text-align: left;
+}
