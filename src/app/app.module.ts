@@ -25,6 +25,9 @@ import { LocationComponent } from './components/restaurants/reservations/locatio
 import { CompleteReservationComponent } from './components/restaurants/reservations/complete-reservation/complete-reservation.component';
 import { ConfirmationModalComponent } from './components/restaurants/reservations/confirmation-modal/confirmation-modal.component';
 import { ClothesShopsComponent } from './components/clothes/clothes-shops/clothes-shops.component';
+import { CountdownComponent } from './components/auto/countdown/countdown.component';
+import { CardCheckComponent } from './components/auto/card-check/card-check.component';
+import { NewsletterComponent } from './components/auto/newsletter/newsletter.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -67,7 +70,10 @@ const appRoutes: Routes = [
     LocationComponent,
     CompleteReservationComponent,
     ConfirmationModalComponent,
-    ClothesShopsComponent
+    ClothesShopsComponent,
+    CountdownComponent,
+    CardCheckComponent,
+    NewsletterComponent
   ],
   bootstrap: [ AppComponent ]
 })
