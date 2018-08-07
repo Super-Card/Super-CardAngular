@@ -1,5 +1,5 @@
 <ul>
-  <li *ngFor="let location of this.restaurants.locations">
+  <li *ngFor="let location of this.restaurants.locations" (click)="this.restaurants.setSelectedLocation(location)">
     {{ location.name }}
   </li>
 </ul>
