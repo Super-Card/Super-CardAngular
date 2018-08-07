@@ -40,6 +40,7 @@ import { CountdownComponent } from './components/auto/countdown/countdown.compon
 import { CardCheckComponent } from './components/auto/card-check/card-check.component';
 import { NewsletterComponent } from './components/auto/newsletter/newsletter.component';
 import { Restaurants } from './components/restaurants/restaurants.service';
+import { TechResultListComponent } from './components/tech/tech-result-list/tech-result-list.component';
 
 
 const appRoutes: Routes = [
@@ -93,7 +94,8 @@ const appRoutes: Routes = [
     ClothesShopsComponent,
     CountdownComponent,
     CardCheckComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    TechResultListComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [ Restaurants ]
