@@ -12,6 +12,18 @@ import { TechComponent } from './pages/tech/tech.component';
 import { RestaurantsComponent } from './pages/restaurants/restaurants.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ClothesFilterComponent } from './components/clothes/clothes-filter/clothes-filter.component';
+import { LocationsComponent } from './components/restaurants/locations/locations.component';
+import { ItemComponent } from './components/restaurants/locations/item/item.component';
+import { ListItemsComponent } from './components/restaurants/locations/list-items/list-items.component';
+import { DescriptionComponent } from './components/restaurants/locations/description/description.component';
+import { ReservationsComponent } from './components/restaurants/reservations/reservations.component';
+import { SelectLocationComponent } from './components/restaurants/reservations/select-location/select-location.component';
+import { SelectDateComponent } from './components/restaurants/reservations/select-date/select-date.component';
+import { SelectTimeComponent } from './components/restaurants/reservations/select-time/select-time.component';
+import { SelectPeopleComponent } from './components/restaurants/reservations/select-people/select-people.component';
+import { LocationComponent } from './components/restaurants/reservations/location/location.component';
+import { CompleteReservationComponent } from './components/restaurants/reservations/complete-reservation/complete-reservation.component';
+import { ConfirmationModalComponent } from './components/restaurants/reservations/confirmation-modal/confirmation-modal.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -41,7 +53,19 @@ const appRoutes: Routes = [
     TechComponent,
     RestaurantsComponent,
     PageNotFoundComponent,
-    ClothesFilterComponent
+    ClothesFilterComponent,
+    LocationsComponent,
+    ItemComponent,
+    ListItemsComponent,
+    DescriptionComponent,
+    ReservationsComponent,
+    SelectLocationComponent,
+    SelectDateComponent,
+    SelectTimeComponent,
+    SelectPeopleComponent,
+    LocationComponent,
+    CompleteReservationComponent,
+    ConfirmationModalComponent
   ],
   bootstrap: [ AppComponent ]
 })
