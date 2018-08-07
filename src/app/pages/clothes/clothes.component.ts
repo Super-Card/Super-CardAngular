@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ClothesComponent implements OnInit {
   title = 'My First Angular App!';
   
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
