@@ -24,6 +24,7 @@ import { SelectPeopleComponent } from './components/restaurants/reservations/sel
 import { LocationComponent } from './components/restaurants/reservations/location/location.component';
 import { CompleteReservationComponent } from './components/restaurants/reservations/complete-reservation/complete-reservation.component';
 import { ConfirmationModalComponent } from './components/restaurants/reservations/confirmation-modal/confirmation-modal.component';
+import { ClothesShopsComponent } from './components/clothes/clothes-shops/clothes-shops.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -65,7 +66,8 @@ const appRoutes: Routes = [
     SelectPeopleComponent,
     LocationComponent,
     CompleteReservationComponent,
-    ConfirmationModalComponent
+    ConfirmationModalComponent,
+    ClothesShopsComponent
   ],
   bootstrap: [ AppComponent ]
 })
