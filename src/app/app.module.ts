@@ -24,6 +24,12 @@ import { SelectPeopleComponent } from './components/restaurants/reservations/sel
 import { LocationComponent } from './components/restaurants/reservations/location/location.component';
 import { CompleteReservationComponent } from './components/restaurants/reservations/complete-reservation/complete-reservation.component';
 import { ConfirmationModalComponent } from './components/restaurants/reservations/confirmation-modal/confirmation-modal.component';
+import { DiscountsComponent } from './components/beauty/beauty-filters/discounts/discounts.component';
+import { GenderComponent } from './components/beauty/beauty-filters/gender/gender.component';
+import { HumanBodyComponent } from './components/beauty/beauty-filters/human-body/human-body.component';
+import { PartnersComponent } from './components/beauty/beauty-filters/partners/partners.component';
+import { ResultItemComponent } from './components/beauty/beauty-filters-result/result-item/result-item.component';
+import { ResultListComponent } from './components/beauty/beauty-filters-result/result-list/result-list.component';
 
 
 import { TechListComponent } from './components/tech/categories/tech-list/tech-list.component';
@@ -77,12 +83,17 @@ const appRoutes: Routes = [
     LocationComponent,
     CompleteReservationComponent,
     ConfirmationModalComponent,
+    DiscountsComponent,
+    GenderComponent,
+    HumanBodyComponent,
+    PartnersComponent,
+    ResultItemComponent,
+    ResultListComponent,
     TechListComponent,
     ClothesShopsComponent,
     CountdownComponent,
     CardCheckComponent,
     NewsletterComponent
-
   ],
   bootstrap: [ AppComponent ],
   providers: [ Restaurants ]
