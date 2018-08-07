@@ -33,6 +33,7 @@ import { ClothesShopsComponent } from './components/clothes/clothes-shops/clothe
 import { CountdownComponent } from './components/auto/countdown/countdown.component';
 import { CardCheckComponent } from './components/auto/card-check/card-check.component';
 import { NewsletterComponent } from './components/auto/newsletter/newsletter.component';
+import { Restaurants } from './components/restaurants/restaurants.service';
 
 
 const appRoutes: Routes = [
@@ -83,6 +84,7 @@ const appRoutes: Routes = [
     NewsletterComponent
 
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [ Restaurants ]
 })
 export class AppModule { }

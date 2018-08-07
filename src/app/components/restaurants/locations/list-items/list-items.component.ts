@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Restaurants } from '../../restaurants.service';
 
 @Component({
   selector: 'app-list-items',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListItemsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private restaurants:Restaurants) { }
 
   ngOnInit() {
   }
