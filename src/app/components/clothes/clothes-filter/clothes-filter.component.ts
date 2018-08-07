@@ -12,4 +12,5 @@ export class ClothesFilterComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }
