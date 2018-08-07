@@ -5,7 +5,7 @@ export class Restaurants {
 
   constructor() { }
 
-  locations: Object[] = [
+  locations = [
     {
       id: 1,
       name: 'Raffy Terrace Bar',
@@ -58,5 +58,6 @@ export class Restaurants {
 
   setSelectedLocation(location) {
     this.selectedLocation = location;
+    console.log(this.selectedLocation);
   }
 }
