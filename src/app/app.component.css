@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', Verdana, sans-serif;
+}
+
+body {
+  margin: 0 !important;
+}
+
+/* header styling */
+.navbar-bcg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(229, 229, 229, 0.1);
+}
+  
+.navbar {
+  font-family: 'Noto Sans', Verdana, sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1150px;
+  height: 80px;
+  position: relative;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.navbar a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #092B75;
+}
+
+.navbar-logo span {
+  color: #1C51C2;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar-links a {
+  margin-left: 1.5rem;
+  color: #092B75; 
+}
+
+.navbar-links a:hover {
+  color: #1C51C2;
+  transition: color .25s;
+}
+
+.content {
+  margin-top: 80px;
+}

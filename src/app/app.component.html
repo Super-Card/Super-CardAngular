@@ -1,12 +1,20 @@
-<h1>
-  {{title}}
-</h1>
-<nav>
-  <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/auto" routerLinkActive="active">Auto</a>
-  <a routerLink="/beauty" routerLinkActive="active">Beauty</a>
-  <a routerLink="/clothes" routerLinkActive="active">Clothes</a>
-  <a routerLink="/tech" routerLinkActive="active">Tech</a>
-  <a routerLink="/restaurants" routerLinkActive="active">Restaurants</a>
-</nav>
-<router-outlet></router-outlet>
+<div class="navbar-bcg">
+  <div class="navbar">
+    <div class="navbar-logo">
+        <h1>
+          Super<span>Card</span>
+        </h1>
+    </div>
+    <nav class="navbar-links">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/auto" routerLinkActive="active">Auto</a>
+      <a routerLink="/beauty" routerLinkActive="active">Beauty</a>
+      <a routerLink="/clothes" routerLinkActive="active">Clothes</a>
+      <a routerLink="/tech" routerLinkActive="active">Tech</a>
+      <a routerLink="/restaurants" routerLinkActive="active">Restaurants</a>
+    </nav>
+  </div>
+</div>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
