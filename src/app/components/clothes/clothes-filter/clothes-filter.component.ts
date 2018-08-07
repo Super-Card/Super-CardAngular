@@ -9,8 +9,9 @@ export class ClothesFilterComponent implements OnInit {
 
   constructor() { }
 
+  onClick() {
+    alert("hi!");
+  }
   ngOnInit() {
   }
-
-
 }
