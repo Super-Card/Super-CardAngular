@@ -31,6 +31,17 @@ import { PartnersComponent } from './components/beauty/beauty-filters/partners/p
 import { ResultItemComponent } from './components/beauty/beauty-filters-result/result-item/result-item.component';
 import { ResultListComponent } from './components/beauty/beauty-filters-result/result-list/result-list.component';
 
+
+import { TechListComponent } from './components/tech/categories/tech-list/tech-list.component';
+
+import { ClothesShopsComponent } from './components/clothes/clothes-shops/clothes-shops.component';
+
+import { CountdownComponent } from './components/auto/countdown/countdown.component';
+import { CardCheckComponent } from './components/auto/card-check/card-check.component';
+import { NewsletterComponent } from './components/auto/newsletter/newsletter.component';
+import { Restaurants } from './components/restaurants/restaurants.service';
+
+
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'auto', component: AutoComponent },
@@ -77,8 +88,14 @@ const appRoutes: Routes = [
     HumanBodyComponent,
     PartnersComponent,
     ResultItemComponent,
-    ResultListComponent
+    ResultListComponent,
+    TechListComponent,
+    ClothesShopsComponent,
+    CountdownComponent,
+    CardCheckComponent,
+    NewsletterComponent
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [ Restaurants ]
 })
 export class AppModule { }

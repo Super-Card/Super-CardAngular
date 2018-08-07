@@ -1,0 +1,24 @@
+#newsletter-container {
+  border: solid 1px;
+  height: 350px;
+  width: 750px;
+  margin: 0 auto;
+  margin-top:100px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#center {
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#results {
+  margin: 0 auto;
+  width: 500px;
+  display: none;
+}
