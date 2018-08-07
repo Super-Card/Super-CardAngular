@@ -76,7 +76,7 @@ const appRoutes: Routes = [
     LocationComponent,
     CompleteReservationComponent,
     ConfirmationModalComponent,
-    TechListComponent
+    TechListComponent,
     ClothesShopsComponent,
     CountdownComponent,
     CardCheckComponent,
