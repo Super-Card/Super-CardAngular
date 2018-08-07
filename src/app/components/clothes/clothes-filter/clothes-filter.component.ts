@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { ClothesService } from "../../../services/clothes.service";
 
 @Component({
   selector: 'app-clothes-filter',
   templateUrl: './clothes-filter.component.html',
-  styleUrls: ['./clothes-filter.component.css']
+  styleUrls: ['./clothes-filter.component.css'],
+  providers: [
+    ClothesService
+  ]
 })
 export class ClothesFilterComponent implements OnInit {
+  constructor(public clothesService: ClothesService) { }
 
-  constructor() { }
-
-  onClick() {
-    alert("hi!");
-  }
   ngOnInit() {
   }
 }
