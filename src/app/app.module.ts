@@ -44,7 +44,7 @@ import { TechResultListComponent } from './components/tech/tech-result-list/tech
 
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'auto', component: AutoComponent },
   { path: 'beauty', component: BeautyComponent },
   { path: 'clothes', component: ClothesComponent },
