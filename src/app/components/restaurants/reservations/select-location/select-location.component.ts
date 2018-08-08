@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Restaurants } from '../../../../services/restaurants.service';
 
 @Component({
   selector: 'app-select-location',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectLocationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private restaurants:Restaurants) { }
 
   ngOnInit() {
   }

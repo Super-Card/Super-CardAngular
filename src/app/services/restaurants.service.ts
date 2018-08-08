@@ -59,4 +59,16 @@ export class Restaurants {
   setSelectedLocation(location) {
     this.selectedLocation = location;
   }
+
+  // Reserve your table
+  // SelectLocation
+  reservedRestaurant = {};
+
+  getReservedRestaurant() {
+    return this.reservedRestaurant;
+  }
+
+  setReservedRestaurant(location) {
+    this.reservedRestaurant = location;
+  }
 }
