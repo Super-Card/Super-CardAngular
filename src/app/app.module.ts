@@ -39,7 +39,7 @@ import { ClothesShopsComponent } from './components/clothes/clothes-shops/clothe
 import { CountdownComponent } from './components/auto/countdown/countdown.component';
 import { CardCheckComponent } from './components/auto/card-check/card-check.component';
 import { NewsletterComponent } from './components/auto/newsletter/newsletter.component';
-import { Restaurants } from './components/restaurants/restaurants.service';
+import { Restaurants } from './services/restaurants.service';
 import { TechResultListComponent } from './components/tech/tech-result-list/tech-result-list.component';
 
 
