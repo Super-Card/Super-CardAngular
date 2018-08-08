@@ -41,6 +41,9 @@ import { CardCheckComponent } from './components/auto/card-check/card-check.comp
 import { NewsletterComponent } from './components/auto/newsletter/newsletter.component';
 import { Restaurants } from './components/restaurants/restaurants.service';
 import { TechResultListComponent } from './components/tech/tech-result-list/tech-result-list.component';
+import { HomeContentComponent } from './components/home-content/home-content.component';
+import { HeadingImageComponent } from './components/home-content/heading-image/heading-image.component';
+import { AboutScComponent } from './components/home-content/about-sc/about-sc.component';
 
 
 const appRoutes: Routes = [
@@ -95,7 +98,10 @@ const appRoutes: Routes = [
     CountdownComponent,
     CardCheckComponent,
     NewsletterComponent,
-    TechResultListComponent
+    TechResultListComponent,
+    HomeContentComponent,
+    HeadingImageComponent,
+    AboutScComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [ Restaurants ]
