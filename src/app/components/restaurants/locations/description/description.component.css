@@ -1,0 +1,31 @@
+/* Description */
+.locations-details {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.locations-details__name {
+    margin: 1rem;
+}
+
+.locations-details__desc {
+    margin: 1rem;
+    padding: 0;
+}
+
+.locations-details__text {
+    width: 600px;
+}
+
+.locations-details__img {
+    display: block;
+    object-fit: cover;
+    width: 350px;
+    height: 300px;
+}
+
+.locations-details--unselected {
+    padding: 1rem;
+    font-size: 1.5rem;
+}

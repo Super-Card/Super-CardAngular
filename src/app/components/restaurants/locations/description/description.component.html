@@ -1,3 +1,7 @@
-<p>
-  {{ this.restaurants.selectedLocation.description }}
-</p>
+<div class="locations-details">
+  <div class="locations-details__text">
+    <h2 class="locations-details__name">{{ this.restaurants.getSelectedLocation().name }}</h2>
+    <p class="locations-details__desc">{{ this.restaurants.getSelectedLocation().desc }}</p>
+  </div>
+  <img class="locations-details__img" [src]="this.restaurants.getSelectedLocation().photo" />
+</div>

@@ -50,14 +50,13 @@ export class Restaurants {
     }
   ];
 
-  getLocations() {
-    return this.locations;
-  }
-
   selectedLocation = {};
+
+  getSelectedLocation() {
+    return this.selectedLocation;
+  }
 
   setSelectedLocation(location) {
     this.selectedLocation = location;
-    console.log(this.selectedLocation);
   }
 }
