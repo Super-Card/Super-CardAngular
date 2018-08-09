@@ -1,3 +1,14 @@
-<p>
-  select-people works!
-</p>
+<div class="reservations-people">
+  <form>
+    <input
+      type="number"
+      min="1"
+      max="10"
+      step="1"
+      [value]="this.restaurants.getSelectedPeople()"
+      class="reservations-people__input"
+      placeholder="Number of people"
+      (input)="handleChange($event)"  
+    />
+  </form>
+</div>

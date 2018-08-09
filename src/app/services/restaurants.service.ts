@@ -78,8 +78,19 @@ export class Restaurants {
     this.isReserved = true;
   }
 
+  selectedPeople = '';
+
+  getSelectedPeople() {
+    return this.selectedPeople;
+  }
+
+  setSelectedPeople(num) {
+    this.selectedPeople = num;
+  }
+
   resetReservation() {
     this.setReservedRestaurant({});
     this.isReserved = false;
+    this.setSelectedPeople('');
   }
 }
