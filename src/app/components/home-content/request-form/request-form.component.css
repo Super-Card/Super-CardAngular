@@ -1,0 +1,40 @@
+.request-form{
+    text-align: center;
+    background-color: #092B75;
+    width: 100%;
+    padding: 5px 55px 55px 55px;
+}
+
+.request-input{
+    width: 39%;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    margin-bottom: 21px;
+    border: 3px solid #FFBF44;
+}
+
+.request-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #FFBF44;
+}
+
+.btn-submit{
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 1.7em;
+    padding: 15px 60px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    background-color: rgb(252, 196, 92);
+}
+
+.request-heading{
+    color: white;
+    font-size: 2.2em;
+}
