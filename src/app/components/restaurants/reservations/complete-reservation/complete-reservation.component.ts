@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Restaurants } from '../../../../services/restaurants.service';
 
 @Component({
   selector: 'app-complete-reservation',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompleteReservationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private restaurants:Restaurants) { }
 
   ngOnInit() {
   }

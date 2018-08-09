@@ -67,11 +67,19 @@ export class Restaurants {
   // SelectLocation
   reservedRestaurant = {};
 
+  isReserved = false;
+
   getReservedRestaurant() {
     return this.reservedRestaurant;
   }
 
   setReservedRestaurant(location) {
     this.reservedRestaurant = location;
+    this.isReserved = true;
+  }
+
+  resetReservation() {
+    this.setReservedRestaurant({});
+    this.isReserved = false;
   }
 }

@@ -1,3 +1,11 @@
-<p>
-  complete-reservation works!
-</p>
+<div>
+  <div class="reservation-complete">
+    <button class="reservation-confirm" [disabled]="!this.restaurants.isReserved">
+      Complete Reservation
+    </button>
+    <button class="reservation-clear" (click)="this.restaurants.resetReservation()">
+      Clear
+    </button>
+  </div>
+  <app-confirmation-modal></app-confirmation-modal>
+</div>

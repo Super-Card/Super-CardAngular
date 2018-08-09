@@ -1,7 +1,12 @@
 <div>
   <p class="location-text">Please select a restaurant:</p>
   <div class="location-list">
-    <button *ngFor="let location of this.restaurants.locations" (click)="this.restaurants.setReservedRestaurant(location)" class="location-button">
+    <button 
+    *ngFor="let location of this.restaurants.locations" 
+    (click)="this.restaurants.setReservedRestaurant(location)" 
+    class="location-button" 
+    [ngClass]="{'location-button--selected': this.restaurants.reservedRestaurant === location}"
+    >
       {{ location.name }}
     </button>
   </div>
