@@ -1,5 +1,8 @@
+.container-body-text{
+    position: relative;
+}
+
 .human-body-img {
-    z-index: 10;
     position: relative;
     margin: auto;
     text-align: center;
@@ -7,4 +10,14 @@
 
 .human-body-img-categories {
     cursor: pointer;
+}
+
+.text-block {
+    position: absolute;
+    top: 60px;
+    right:110px;
+    color:black;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:300px;
 }

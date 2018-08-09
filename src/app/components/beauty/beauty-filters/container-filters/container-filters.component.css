@@ -1,0 +1,7 @@
+.beauty-filter-area-left {
+    z-index: 99;
+    position: absolute;
+    padding-left: 150px;
+    padding-top: 30px;
+    overflow: auto;
+}
