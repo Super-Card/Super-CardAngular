@@ -45,6 +45,7 @@ import { HomeContentComponent } from './components/home-content/home-content.com
 import { HeadingImageComponent } from './components/home-content/heading-image/heading-image.component';
 import { AboutScComponent } from './components/home-content/about-sc/about-sc.component';
 import {RequestFormComponent} from './components/home-content/request-form/request-form.component';
+import { ContainerFiltersComponent } from './components/beauty/beauty-filters/container-filters/container-filters.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -102,7 +103,8 @@ const appRoutes: Routes = [
     HomeContentComponent,
     HeadingImageComponent,
     AboutScComponent,
-    RequestFormComponent
+    RequestFormComponent,
+    ContainerFiltersComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [ Restaurants ]

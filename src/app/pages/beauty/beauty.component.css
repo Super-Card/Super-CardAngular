@@ -1,0 +1,10 @@
+.beauty-intro {
+    width: 85%;
+    margin: auto;
+    width: 1150px;
+}
+
+.beauty-intro h1 {
+    display: inline-block;
+    padding-top: 2rem;
+}
