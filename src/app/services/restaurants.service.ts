@@ -52,12 +52,15 @@ export class Restaurants {
 
   selectedLocation = {};
 
+  isSelected = false;
+
   getSelectedLocation() {
     return this.selectedLocation;
   }
 
   setSelectedLocation(location) {
     this.selectedLocation = location;
+    this.isSelected = true;
   }
 
   // Reserve your table

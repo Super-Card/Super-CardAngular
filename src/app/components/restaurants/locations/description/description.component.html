@@ -1,4 +1,5 @@
-<div class="locations-details">
+<div class="locations-details--unselected" *ngIf="!this.restaurants.isSelected">Please select a restaurant for more details.</div>
+<div class="locations-details" *ngIf="this.restaurants.isSelected">
   <div class="locations-details__text">
     <h2 class="locations-details__name">{{ this.restaurants.getSelectedLocation().name }}</h2>
     <p class="locations-details__desc">{{ this.restaurants.getSelectedLocation().desc }}</p>
