@@ -34,6 +34,7 @@
   display: inline-block;
   text-transform: uppercase;
   color: #092B75;
+  cursor: pointer;
 }
 
 .navbar-logo span {

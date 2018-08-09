@@ -1,0 +1,52 @@
+/* SelectLocation */
+.location-text {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.location-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.location-button {
+    margin: 0 .5rem;
+    background-color: transparent;
+    border: 3px solid #ffbf44;
+    border-radius: 50px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: .9rem;
+}
+
+.location-button:focus {
+    outline: none;
+}
+
+.location-button:hover {
+    background-color: #ffbf44;
+    color: white;
+    transition: background-color .25s;
+}
+
+.location-button--selected {
+    background-color: #ffbf44;
+    color: white;
+    margin: 0 .5rem;
+    border: 3px solid #ffbf44;
+    border-radius: 50px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: .9rem;
+    cursor: auto;
+    font-weight: 700;
+}
+
+.location-button--selected:focus {
+    outline: none;
+}
