@@ -1,0 +1,38 @@
+.about-sc {
+    margin: 2rem auto;
+    width: 1150px;
+}
+
+.about-title {
+    text-align: center;
+}
+
+.about-text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.about-icons {
+    display: flex;
+    width: 1150px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.about-icons div {
+    width: 300px;
+}
+
+.about-icons p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.about-icons img {
+    max-width: 100px;
+    max-height: 80px;
+    display: block;
+    margin: auto;
+}
