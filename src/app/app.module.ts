@@ -44,7 +44,7 @@ import { TechResultListComponent } from './components/tech/tech-result-list/tech
 import { HomeContentComponent } from './components/home-content/home-content.component';
 import { HeadingImageComponent } from './components/home-content/heading-image/heading-image.component';
 import { AboutScComponent } from './components/home-content/about-sc/about-sc.component';
-
+import {RequestFormComponent} from './components/home-content/request-form/request-form.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -101,7 +101,8 @@ const appRoutes: Routes = [
     TechResultListComponent,
     HomeContentComponent,
     HeadingImageComponent,
-    AboutScComponent
+    AboutScComponent,
+    RequestFormComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [ Restaurants ]
