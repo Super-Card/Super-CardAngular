@@ -1,3 +1,13 @@
-<p>
-  confirmation-modal works!
-</p>
+<div *ngIf="this.restaurants.getModalState()">
+  <div class="confirmation-modal-bcg"></div>
+  <div class="confirmation-modal">
+    <h2 class="confirmation-title">Reservation Confirmation</h2>
+    <p>Reservation number: {{reservationNumber}}</p>
+    <p>
+      You have successfully booked a table at <strong>{{this.restaurants.getReservedRestaurant().name}}</strong>
+    </p>
+    <button class="reservation-confirm confirmation-close" (click)="closeModal()">
+      Close
+    </button>
+  </div>
+</div>

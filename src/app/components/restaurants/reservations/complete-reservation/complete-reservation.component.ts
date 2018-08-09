@@ -12,5 +12,5 @@ export class CompleteReservationComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
 }
