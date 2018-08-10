@@ -45,6 +45,7 @@ import { HomeContentComponent } from './components/home-content/home-content.com
 import { HeadingImageComponent } from './components/home-content/heading-image/heading-image.component';
 import { AboutScComponent } from './components/home-content/about-sc/about-sc.component';
 import {RequestFormComponent} from './components/home-content/request-form/request-form.component';
+import {TechService} from './services/tech.service';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -105,6 +106,6 @@ const appRoutes: Routes = [
     RequestFormComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [ Restaurants ]
+  providers: [ Restaurants, TechService ]
 })
 export class AppModule { }
