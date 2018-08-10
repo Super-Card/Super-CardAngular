@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectDateComponent implements OnInit {
 
+  date: Date = new Date();
+  settings = {
+      bigBanner: false,
+      timePicker: false,
+      format: 'dd-MM-yyyy',
+      defaultOpen: false
+  }
+    
   constructor() { }
 
   ngOnInit() {

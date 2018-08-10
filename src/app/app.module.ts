@@ -48,7 +48,7 @@ import {RequestFormComponent} from './components/home-content/request-form/reque
 import {TechService} from './services/tech.service';
 
 import { ContainerFiltersComponent } from './components/beauty/beauty-filters/container-filters/container-filters.component';
-
+import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -64,6 +64,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
+    AngularDateTimePickerModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
