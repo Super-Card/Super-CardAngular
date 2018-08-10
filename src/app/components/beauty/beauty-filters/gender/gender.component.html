@@ -6,6 +6,7 @@
       name="male"
       id="male"
       value="male"
+      (click)="this.beautyService.setFilter('gender', 'male', $event.target.checked)"
     />Male
   </label>
   <label htmlFor="female">
@@ -14,6 +15,7 @@
       name="female"
       id="female"
       value="female"
+      (click)="this.beautyService.setFilter('gender', 'female', $event.target.checked)"
     />Female
   </label>
 </div>
