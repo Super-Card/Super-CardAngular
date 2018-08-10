@@ -30,7 +30,7 @@ import { HumanBodyComponent } from './components/beauty/beauty-filters/human-bod
 import { PartnersComponent } from './components/beauty/beauty-filters/partners/partners.component';
 import { ResultItemComponent } from './components/beauty/beauty-filters-result/result-item/result-item.component';
 import { ResultListComponent } from './components/beauty/beauty-filters-result/result-list/result-list.component';
-
+import {RequestModalComponent} from './components/home-content/request-modal/request-modal.component';
 
 import { TechListComponent } from './components/tech/categories/tech-list/tech-list.component';
 
@@ -46,7 +46,7 @@ import { HeadingImageComponent } from './components/home-content/heading-image/h
 import { AboutScComponent } from './components/home-content/about-sc/about-sc.component';
 import {RequestFormComponent} from './components/home-content/request-form/request-form.component';
 import {TechService} from './services/tech.service';
-
+import {HomeService} from './services/home.service';
 import { ContainerFiltersComponent } from './components/beauty/beauty-filters/container-filters/container-filters.component';
 import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 import { BeautyService } from './services/beauty.service';
@@ -109,9 +109,10 @@ const appRoutes: Routes = [
     HeadingImageComponent,
     AboutScComponent,
     RequestFormComponent,
-    ContainerFiltersComponent
+    ContainerFiltersComponent,
+    RequestModalComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [ Restaurants, TechService, BeautyService ]
+  providers: [ Restaurants, TechService, BeautyService, HomeService ]
 })
 export class AppModule { }
