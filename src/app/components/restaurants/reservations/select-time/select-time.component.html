@@ -1,3 +1,7 @@
-<p>
-  select-time works!
-</p>
+<div>
+  <select class="select-time" placeholder="Select time">
+    <option *ngFor="let timeOption of timeOptions" [value]="timeOption.value">
+      {{timeOption.value}}
+    </option>
+  </select>
+</div>

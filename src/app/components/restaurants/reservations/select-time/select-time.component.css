@@ -1,0 +1,16 @@
+.select-time {
+    position: relative;
+    width: 200px;
+    left: 50%;
+    line-height: 25px;
+    color: #343434;
+    border: 3px solid #ffbf44;
+    background-color: transparent;
+    padding: 1px;
+    height: 33.6px;
+    text-align: center;
+    padding-left: 0.5rem; 
+    cursor: pointer;
+    font-family: inherit;
+    font-size: .9rem;
+}
