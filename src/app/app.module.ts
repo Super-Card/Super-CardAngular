@@ -47,6 +47,9 @@ import { AboutScComponent } from './components/home-content/about-sc/about-sc.co
 import {RequestFormComponent} from './components/home-content/request-form/request-form.component';
 import {TechService} from './services/tech.service';
 
+import { ContainerFiltersComponent } from './components/beauty/beauty-filters/container-filters/container-filters.component';
+
+
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'auto', component: AutoComponent },
@@ -103,7 +106,8 @@ const appRoutes: Routes = [
     HomeContentComponent,
     HeadingImageComponent,
     AboutScComponent,
-    RequestFormComponent
+    RequestFormComponent,
+    ContainerFiltersComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [ Restaurants, TechService ]

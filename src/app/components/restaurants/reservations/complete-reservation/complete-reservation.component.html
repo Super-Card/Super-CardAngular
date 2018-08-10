@@ -1,6 +1,6 @@
 <div>
   <div class="reservation-complete">
-    <button class="reservation-confirm" [disabled]="!this.restaurants.isReserved">
+    <button class="reservation-confirm" [disabled]="!isFilledOut()" (click)="this.restaurants.toggleModal()">
       Complete Reservation
     </button>
     <button class="reservation-clear" (click)="this.restaurants.resetReservation()">
