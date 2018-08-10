@@ -1,0 +1,10 @@
+.content-cotainer{
+    display: flex;
+    justify-content: space-between;
+}
+.width{
+    width: 60%;
+}
+.tech-list{
+    width: 25%;
+}

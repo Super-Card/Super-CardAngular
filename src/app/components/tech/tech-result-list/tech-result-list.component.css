@@ -1,5 +1,9 @@
 .result-list{
     background-color: orange;
-    margin-right: 21%;
-    width: 50%;
+    width: 100%;
+    height: 480px;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 16px;
 }

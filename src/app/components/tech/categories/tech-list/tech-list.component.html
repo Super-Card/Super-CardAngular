@@ -1,10 +1,6 @@
-<h2>
-  Categories
-</h2>
-<ul class="categories">
-  <li class="items">Cameras</li>
-  <li class="items">Mobile</li>
-  <li class="items">Audio</li>
-  <li class="items">TV</li>
-  <li class="items">Laptops</li>
-</ul>
+<div class="categories">
+  <h2>Categories</h2>
+  <div *ngFor="let item of this.categories.items" (click)="this.categories.setSelectedItem(item)" class="items">
+    {{ item.title }}
+  </div>
+</div>
