@@ -1,0 +1,23 @@
+/* SelectPeople */
+.reservations-people__input {
+    background-color: transparent;
+    border: 3px solid #ffbf44;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 33.6px;
+    text-align: center;
+    padding-left: 0.5rem; 
+    cursor: pointer;
+    font-family: inherit;
+    font-size: .9rem;
+    width: 200px;
+}
+
+.reservations-people__input::placeholder {
+    text-align: center;
+    color: #343434;
+}
+
+.reservations-people__input:focus {
+    outline: none;
+}

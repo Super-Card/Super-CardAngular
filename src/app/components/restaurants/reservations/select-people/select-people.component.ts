@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Restaurants } from '../../../../services/restaurants.service';
 
 @Component({
   selector: 'app-select-people',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectPeopleComponent implements OnInit {
 
-  constructor() { }
+  constructor(private restaurants:Restaurants) { }
 
   ngOnInit() {
   }
 
+  handleChange(event) {
+    this.restaurants.setSelectedPeople(event.target.value);
+  }
 }
