@@ -20,7 +20,7 @@ export class SelectTimeComponent implements OnInit {
     { value: '20:00' },
     { value: '20:30' },
     { value: '21:00' }
-  ]
+  ];
 
   constructor() { }
 
