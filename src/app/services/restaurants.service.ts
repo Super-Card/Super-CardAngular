@@ -93,4 +93,14 @@ export class Restaurants {
     this.isReserved = false;
     this.setSelectedPeople('');
   }
+
+  showModal = false;
+
+  getModalState() {
+    return this.showModal;
+  }
+
+  toggleModal() {
+    this.showModal = !this.showModal;
+  }
 }

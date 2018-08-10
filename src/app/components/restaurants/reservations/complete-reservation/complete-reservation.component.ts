@@ -12,7 +12,7 @@ export class CompleteReservationComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
   isFilledOut() {
     return this.restaurants.isReserved && this.restaurants.selectedPeople;
   }
