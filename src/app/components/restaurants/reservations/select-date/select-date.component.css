@@ -1,0 +1,42 @@
+:host /deep/ .wc-date-container {
+    color: #343434  !important;
+    border: 3px solid #ffbf44 !important;
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    background-color: transparent !important;
+    padding: 4px 1px 1px 0.5rem !important;
+    height: 33.6px !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    font-family: inherit !important;
+    font-size: .9rem !important;
+    width: 200px  !important;
+}
+
+:host /deep/ .cal-util {
+    display: none !important;
+}
+
+:host /deep/ .wc-details {
+    background: #1C51C2 !important;
+}
+
+:host /deep/ .wc-date-container > span {
+    color: #343434 !important;
+}
+
+:host /deep/ .year-title {
+    background: #1C51C2 !important;
+}
+
+:host /deep/ .selected-day > span  {
+    background: #ffbf44 !important;
+}
+
+:host /deep/ .calendar-days {
+    color: #1C51C2 !important;
+}
+
+:host /deep/ .today > span {
+    border: 1px solid #ffbf44 !important;
+}
