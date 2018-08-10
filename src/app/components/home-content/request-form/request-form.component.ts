@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from '../../../services/home.service';
 
 @Component({
   selector: 'app-request-form',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RequestFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(public home:HomeService) { }
 
   ngOnInit() {
   }

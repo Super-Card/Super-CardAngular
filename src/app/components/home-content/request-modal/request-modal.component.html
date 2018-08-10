@@ -1,0 +1,10 @@
+<div *ngIf="this.home.getModalStatus()">
+    <div class="request-modal-bcg"></div>
+    <div class="request-modal">
+        <h1 class="modal_heading"> Your request is accepted! </h1>
+        <p class="modal-description">We will get in touch with you in 24 hours to set-up delivery.</p>
+        <button class="close-modal" (click)="closeModal()">
+            Close
+        </button>
+    </div>
+</div>
