@@ -82,4 +82,14 @@ export class Restaurants {
     this.setReservedRestaurant({});
     this.isReserved = false;
   }
+
+  showModal = false;
+
+  getModalState() {
+    return this.showModal;
+  }
+
+  toggleModal() {
+    this.showModal = !this.showModal;
+  }
 }

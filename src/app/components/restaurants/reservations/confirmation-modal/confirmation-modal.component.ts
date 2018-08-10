@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Restaurants } from '../../../../services/restaurants.service';
 
 @Component({
   selector: 'app-confirmation-modal',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfirmationModalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private restaurants:Restaurants) { }
 
   ngOnInit() {
+  }
+
+  reservationNumber = Math.floor(Math.random() * 1000) + 5000;
+
+  closeModal() {
+    this.restaurants.toggleModal();
+    this.restaurants.resetReservation();
   }
 
 }
