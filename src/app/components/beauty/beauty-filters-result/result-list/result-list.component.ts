@@ -13,8 +13,4 @@ export class ResultListComponent implements OnInit {
   ngOnInit() {
   }
 
-  setFilter(type, filter, isChecked) {
-    this.beautyService.setFilter(type, filter, isChecked);
-  }
-
 }
