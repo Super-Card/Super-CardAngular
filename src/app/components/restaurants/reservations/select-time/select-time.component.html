@@ -1,6 +1,6 @@
 <div>
   <div class="select-time">
-    <div (click)="toggleOptions()">{{ !this.restaurants.getSelectedTime() ? 'Select time' : this.restaurants.getSelectedTime() }}</div>
+    <div (click)="toggleOptions()" class="select-time__placeholder">{{ !this.restaurants.getSelectedTime() ? 'Select time' : this.restaurants.getSelectedTime() }}</div>
     <ul *ngIf="timeOptionsVisible" class="select-time__options">
       <li *ngFor="let timeOption of timeOptions" [value]="timeOption.value" (click)="onSelect(timeOption.value)" class="select-time__option">
         {{ timeOption.value }}

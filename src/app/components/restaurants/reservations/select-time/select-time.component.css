@@ -17,6 +17,10 @@
     outline: none;
 }
 
+.select-time__placeholder {
+    padding-top: 1px;
+}
+
 .select-time__options {
     background-color: white;
     list-style-type: none;
