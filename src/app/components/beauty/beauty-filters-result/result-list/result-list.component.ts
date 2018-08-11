@@ -1,16 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { BeautyService } from '../../../../services/beauty.service';
+import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-result-list',
   templateUrl: './result-list.component.html',
   styleUrls: ['./result-list.component.css']
 })
-export class ResultListComponent implements OnInit {
+export class ResultListComponent implements OnInit  {
 
-  constructor(private beautyService: BeautyService) { }
+  constructor(@Inject(DOCUMENT) private document: any, private beautyService: BeautyService) { }
 
   ngOnInit() {
+  }
+
+  closeTag(filter) {
+    document.getElementById(filter).click();
   }
 
 }
