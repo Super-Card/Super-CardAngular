@@ -39,7 +39,8 @@ export class BeautyService {
     if (isChecked) {
       this.filters[type].push(filter);
     } else {
-      this.filters[type].remove(filter);
+      let array = this.filters[type];
+      array.splice(array.indexOf(filter), 1)
     }
   }
 
