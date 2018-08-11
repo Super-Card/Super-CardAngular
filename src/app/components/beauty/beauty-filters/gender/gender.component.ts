@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BeautyService } from '../../../../services/beauty.service';
 
 @Component({
   selector: 'app-gender',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GenderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private beautyService: BeautyService) { }
 
   ngOnInit() {
   }

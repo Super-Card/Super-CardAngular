@@ -6,6 +6,7 @@
       name="beautyzone"
       id="beautyzone"
       value="beautyzone"
+      (click)="this.beautyService.setFilter('partners', 'beautyzone', $event.target.checked)"
     />Beauty Zone
   </label>
   <label htmlFor="sephora">
@@ -14,6 +15,7 @@
       name="sephora"
       id="sephora"
       value="sephora"
+      (click)="this.beautyService.setFilter('partners', 'sephora', $event.target.checked)"
     />Sephora
   </label>
   <label htmlFor="douglas">
@@ -22,6 +24,7 @@
       name="douglas"
       id="douglas"
       value="douglas"
+      (click)="this.beautyService.setFilter('partners', 'douglas', $event.target.checked)"
     />Douglas
   </label>
   <label htmlFor="dm">
@@ -30,6 +33,7 @@
       name="dm"
       id="dm"
       value="dm"
+      (click)="this.beautyService.setFilter('partners', 'dm', $event.target.checked)"
     />DM
   </label>
   <label htmlFor="lillydrogerie">
@@ -38,6 +42,7 @@
       name="lillydrogerie"
       id="lillydrogerie"
       value="lillydrogerie"
+      (click)="this.beautyService.setFilter('partners', 'lillydrogerie', $event.target.checked)"
     />Lilly Drogerie
   </label>
 </div>
