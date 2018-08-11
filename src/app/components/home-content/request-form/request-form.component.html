@@ -1,13 +1,26 @@
 <div>
-    <form class="request-form" id="request-card">
+    <form class="request-form" id="request-card" #signupForm="ngForm">
         <h2 class="request-heading">Request your SuperCard today!</h2>
-        <input type="text" name="name" placeholder="Your name" class="request-input" />
+        <input type="text"
+        placeholder="Your name"
+        class="request-input" 
+        [ngModel] = "user.name" name="name"
+        #name = "ngModel"
+        id="inputName"
+        required />
         <br />
-        <input type="email" name="email" placeholder="Your email" class="request-input" />
+        <input type="email" 
+        placeholder="Your email"
+        class="request-input" 
+        [ngModel] = "user.email" name="email"
+        #email = "ngModel"
+        id="inputEmail"
+        required />
         <br />
         <textarea name="text" cols="45" rows="5" placeholder="Write message.." class="request-input"></textarea>
         <br />
-        <input type="reset" value="Submit" class="btn-submit" (click)="this.home.toggleModal()" />
+        <input type="reset" value="Submit" class="btn-submit" (click)="this.home.toggleModal()" [disabled]="!signupForm.form.valid"
+        />
     </form>
     <app-request-modal></app-request-modal>
 </div>
