@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Restaurants } from '../../../../services/restaurants.service';
 
 export interface Time {
   value: string;
 }
-
 
 @Component({
   selector: 'app-select-time',
@@ -22,7 +22,18 @@ export class SelectTimeComponent implements OnInit {
     { value: '21:00' }
   ];
 
-  constructor() { }
+  timeOptionsVisible = false;
+
+  toggleOptions() {
+    this.timeOptionsVisible = !this.timeOptionsVisible;
+  }
+
+  onSelect(time) {
+    this.restaurants.setSelectedTime(time);
+    this.toggleOptions();
+  }
+
+  constructor(private restaurants:Restaurants) { }
 
   ngOnInit() {
   }
