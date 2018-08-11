@@ -14,7 +14,7 @@ export class CompleteReservationComponent implements OnInit {
   }
   
   isFilledOut() {
-    return this.restaurants.isReserved && this.restaurants.selectedPeople;
+    return this.restaurants.isReserved && this.restaurants.selectedPeople && this.restaurants.selectedTime;
   }
 
 }

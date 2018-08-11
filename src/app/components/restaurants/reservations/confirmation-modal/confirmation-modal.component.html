@@ -1,10 +1,10 @@
 <div *ngIf="this.restaurants.getModalState()">
-  <div class="confirmation-modal-bcg"></div>
+  <div class="confirmation-modal-bcg" (click)="closeModal()"></div>
   <div class="confirmation-modal">
     <h2 class="confirmation-title">Reservation Confirmation</h2>
-    <p>Reservation number: {{reservationNumber}}</p>
+    <p>Reservation number: {{ reservationNumber }}</p>
     <p>
-      You have successfully booked a table at <strong>{{this.restaurants.getReservedRestaurant().name}}</strong> for {{this.restaurants.getSelectedPeople()}} {{this.restaurants.getSelectedPeople() === '1' ? 'person' : 'people'}}.
+      You have successfully booked a table at <strong>{{this.restaurants.getReservedRestaurant().name}}</strong> at {{ this.restaurants.getSelectedTime() }} for {{this.restaurants.getSelectedPeople()}} {{this.restaurants.getSelectedPeople() === '1' ? 'person' : 'people'}}.
     </p>
     <button class="reservation-confirm confirmation-close" (click)="closeModal()">
       Close

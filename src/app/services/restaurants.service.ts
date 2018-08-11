@@ -64,7 +64,7 @@ export class Restaurants {
   }
 
   // Reserve your table
-  // SelectLocation
+  // select-location
   reservedRestaurant = {};
 
   isReserved = false;
@@ -78,6 +78,18 @@ export class Restaurants {
     this.isReserved = true;
   }
 
+  // select-time
+  selectedTime = '';
+
+  getSelectedTime() {
+    return this.selectedTime;
+  }
+
+  setSelectedTime(time) {
+    this.selectedTime = time;
+  }
+
+  // select-people
   selectedPeople = '';
 
   getSelectedPeople() {
@@ -88,10 +100,12 @@ export class Restaurants {
     this.selectedPeople = num;
   }
 
+  // clear button & close modal
   resetReservation() {
     this.setReservedRestaurant({});
     this.isReserved = false;
     this.setSelectedPeople('');
+    this.setSelectedTime('');
   }
 
   showModal = false;
