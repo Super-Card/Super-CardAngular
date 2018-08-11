@@ -1,7 +1,13 @@
 <div>
   <h2 class="resul-heading">See our prtners and discounts!</h2>
-  <div class="result-list">
+  <div class="item-details no-selected" *ngIf="!this.category.isActive">
     No selected items!
   </div>
+  <div class="item-details" *ngIf="this.category.isActive">
+    <div class="item-wrapper">
+      <p class="info-title">{{ this.category.getItems.title }}</p>
+      <p class="info-descfription">{{ this.category.getItems.text }}</p>
+    </div>
+    <img class="info-img" [src]="this.category.getItems.photo" />
 </div>
 

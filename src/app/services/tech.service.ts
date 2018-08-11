@@ -39,9 +39,13 @@ export class TechService{
       selectedItem = {};
 
       get getItems() {
-        return this.items;
+        return this.selectedItem;
       }
+      
+      isActive = false;
+
       setSelectedItem(item) {
         this.selectedItem = item;
+        this.isActive = true;
       }
 }
