@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class CardCheckComponent implements OnInit {
 
   constructor() { }
-buttonTest() {
-  alert("It works");
-}
+  public show:boolean = false;
+
   ngOnInit() {
   }
-
+  toggle() {
+    this.show = !this.show;
+  }
 }

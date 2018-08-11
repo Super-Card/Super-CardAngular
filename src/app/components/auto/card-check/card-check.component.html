@@ -1,20 +1,21 @@
+
 <div>
   <div id="newsletter-container">
-    <h1>Enter the ID of your card:</h1>
+    <h1>See where you can use your discount!</h1>
     <div id="center">
-      <input>
-      <input type="submit" value="Check" (click)="buttonTest()">
+      <input type="submit" value="Check" class="submit-button" (click)="toggle()" />
     </div>
-    <div id="results">
-      <h2>Your card is valid in the following places:</h2>
-      <p>Magic Auto Spa</p>
-      <p>Ivans auto shop</p>
-      <p>AutoHouse Sofia</p>
-      <p>Bankya Auto Palace</p>
-      <button>
-        Close
-      </button>
-    </div>
-  </div>
-  <h1>Offers:</h1>
-</div>
+
+    <ng-container *ngIf="show">
+      <div >
+        <h2 class="green-heading">Your card is valid in the following places:</h2>
+        <p>Magic Auto Spa</p>
+        <p>Ivans auto shop</p>
+        <p>AutoHouse Sofia</p>
+        <p>Bankya Auto Palace</p>
+      </div>
+    </ng-container>
+
+
+
+
