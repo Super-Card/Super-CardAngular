@@ -25,7 +25,6 @@ import { DiscountsComponent } from './components/beauty/beauty-filters/discounts
 import { GenderComponent } from './components/beauty/beauty-filters/gender/gender.component';
 import { HumanBodyComponent } from './components/beauty/beauty-filters/human-body/human-body.component';
 import { PartnersComponent } from './components/beauty/beauty-filters/partners/partners.component';
-import { ResultItemComponent } from './components/beauty/beauty-filters-result/result-item/result-item.component';
 import { ResultListComponent } from './components/beauty/beauty-filters-result/result-list/result-list.component';
 import {RequestModalComponent} from './components/home-content/request-modal/request-modal.component';
 import { TechListComponent } from './components/tech/categories/tech-list/tech-list.component';
@@ -89,7 +88,6 @@ const appRoutes: Routes = [
     GenderComponent,
     HumanBodyComponent,
     PartnersComponent,
-    ResultItemComponent,
     ResultListComponent,
     TechListComponent,
     ClothesShopsComponent,
