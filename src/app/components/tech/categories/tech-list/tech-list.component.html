@@ -1,6 +1,6 @@
 <div class="categories">
   <h2 class="category-header">Categories</h2>
-  <div *ngFor="let item of this.categories.items" (click)="this.categories.setSelectedItem(item)" class="items">
+  <div style="text-align: center" *ngFor="let item of this.categories.items" (click)="this.categories.setSelectedItem(item)" class="items">
     {{ item.title }}
   </div>
 </div>
