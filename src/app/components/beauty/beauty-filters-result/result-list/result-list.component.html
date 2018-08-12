@@ -1,6 +1,31 @@
+<div class="tags">
+    <span *ngIf="this.beautyService.filters.discounts.length > 0 ||
+            this.beautyService.filters.partners.length > 0 ||
+            this.beautyService.filters.gender.length > 0 ||
+            this.beautyService.filters.categories.length > 0">
+            Tags: 
+    </span>
+    <span *ngFor="let tag of this.beautyService.filters.gender" class="tag">
+        {{tag}} <span class="close-icon" (click)="this.closeTag(tag)">&times;</span>
+    </span>
+    <span *ngFor="let tag of this.beautyService.filters.partners" class="tag">
+        {{tag}} <span class="close-icon" (click)="this.closeTag(tag)">&times;</span>
+    </span>
+    <span *ngFor="let tag of this.beautyService.filters.discounts" class="tag">
+        {{tag}} <span class="close-icon" (click)="this.closeTag(tag)">&times;</span>
+    </span>
+    <span *ngFor="let tag of this.beautyService.filters.categories" class="tag">
+        {{tag}} <span class="close-icon" (click)="this.closeTag(tag)">&times;</span>
+    </span>
+</div>
+
 <div class="result-list-item" *ngFor="let resultItem of this.beautyService.getResultItems()">
     <div class="brand-name"> {{ resultItem.brandName }} </div>
     <img class="brand-img" [src]="resultItem.brandImage" />
     <img class="discount-percent" [src]="resultItem.discountImage" />
     <img class="logo-partner" [src]="resultItem.logoPartner" />
+</div>
+
+<div class="no-matches">
+    <span *ngIf="this.beautyService.getResultItems().length === 0">No matches found!</span>
 </div>
