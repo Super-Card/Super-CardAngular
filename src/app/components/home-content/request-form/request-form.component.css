@@ -2,7 +2,7 @@
     text-align: center;
     background-color: #092B75;
     width: 100%;
-    padding: 5px 55px 55px 55px;
+    padding: 20px 55px 55px 55px;
 }
 
 .request-input{
@@ -37,4 +37,5 @@
 .request-heading{
     color: white;
     font-size: 2.2em;
+    margin-bottom: 20px;
 }
