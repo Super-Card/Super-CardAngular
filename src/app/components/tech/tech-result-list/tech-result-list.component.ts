@@ -12,5 +12,13 @@ export class TechResultListComponent implements OnInit {
 
   ngOnInit() {
   }
-
+    shops: Array<Object> = [
+      {value:'selected',viewValue:'Make your choise'},
+      {value:'technomarket',viewValue:'Technomarket'},
+      {value:'technopolis',viewValue:'Technopolis'},
+      {value:'madia-markt',viewValue:'Media Market'},
+      {value:'inter-techno',viewValue:'InterTecno'},
+      {value:'electronica',viewValue:'Electronica'},
+    ]
+    selectedValue = this.shops[0];
 }

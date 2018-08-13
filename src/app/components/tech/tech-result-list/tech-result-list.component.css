@@ -47,15 +47,16 @@ h2.result-heading{
     width: 61%;
 }
 .contact-us{
-    background-color: yellowgreen;
+    background-color: #1C51C2;
     padding: 15px;
     font-size: 1.2em;
     display: inline-block;
     border-radius: 5px;
     position: absolute;
     bottom: 262px;
-    cursor: pointer;
-}
-.contact-us:hover{
     color: white;
 }
+/* .contact-us:hover{
+    color: white;
+    cursor: pointer;
+} */

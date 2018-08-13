@@ -9,7 +9,11 @@
       <p class="info-descfription">{{ this.category.getItems.text }}</p>
     </div>
     <img class="info-img" [src]="this.category.getItems.photo" />
-    <p class="contact-us">Contact us!</p> 
+    <select class="contact-us" [(ngModel)]="selectedValue" name="shop">
+      <option *ngFor="let shop of shops" [ngValue]="shop">
+        {{shop.viewValue}}
+      </option>
+    </select> 
 </div>
 
 
