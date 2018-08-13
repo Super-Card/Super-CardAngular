@@ -12,6 +12,7 @@ export class ResultListComponent implements OnInit  {
   constructor(@Inject(DOCUMENT) private document: any, private beautyService: BeautyService) { }
 
   ngOnInit() {
+    this.beautyService.filters = { discounts: [], partners: [], gender: [], categories: [] };
   }
 
   closeTag(filter) {
