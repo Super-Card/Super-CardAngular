@@ -13,4 +13,9 @@
     <img class="mall-img" src="../../../../assets/clothes/burgas.jpg" alt="MALL BURGAS" />
     <img class="mall-img" src="../../../../assets/clothes/zagora.jpg" alt="MALL STARA ZAGORA" />
   </div>
+  <ul>
+    <li *ngFor="let item of this.clothesService.resultItems">
+      {{ item }}
+    </li>
+  </ul>
 </div>
