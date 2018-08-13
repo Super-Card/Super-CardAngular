@@ -78,6 +78,17 @@ export class Restaurants {
     this.isReserved = true;
   }
 
+  // select-date
+  selectedDate = new Date();
+
+  getSelectedDate() {
+    return this.selectedDate;
+  }
+
+  setSelectedDate(date) {
+    this.selectedDate = date;
+  }
+
   // select-time
   selectedTime = '';
 

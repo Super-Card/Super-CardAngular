@@ -4,7 +4,7 @@
     <h2 class="confirmation-title">Reservation Confirmation</h2>
     <p>Reservation number: {{ reservationNumber }}</p>
     <p>
-      You have successfully booked a table at <strong>{{this.restaurants.getReservedRestaurant().name}}</strong> at {{ this.restaurants.getSelectedTime() }} for {{this.restaurants.getSelectedPeople()}} {{this.restaurants.getSelectedPeople() === '1' ? 'person' : 'people'}}.
+      You have successfully booked a table at <strong>{{ this.restaurants.getReservedRestaurant().name }}</strong> on {{ this.restaurants.getSelectedDate().toLocaleDateString() }} at {{ this.restaurants.getSelectedTime() }} for {{this.restaurants.getSelectedPeople() }} {{ this.restaurants.getSelectedPeople() === '1' ? 'person' : 'people' }}.
     </p>
     <button class="reservation-confirm confirmation-close" (click)="closeModal()">
       Close
