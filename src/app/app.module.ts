@@ -43,6 +43,8 @@ import { HomeService } from './services/home.service';
 import { ContainerFiltersComponent } from './components/beauty/beauty-filters/container-filters/container-filters.component';
 import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 import { BeautyService } from './services/beauty.service';
+import { ClothesService } from "./services/clothes.service";
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -103,6 +105,6 @@ const appRoutes: Routes = [
     RequestModalComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [ Restaurants, TechService, BeautyService, HomeService ]
+  providers: [ Restaurants, TechService, BeautyService, HomeService, ClothesService ]
 })
 export class AppModule { }

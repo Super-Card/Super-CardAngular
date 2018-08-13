@@ -4,7 +4,7 @@
 
 
 <div>
-  <div className="result-list-mall">
+  <!-- <div className="result-list-mall">
     <h2 class="mall-name"></h2>
     <img class="mall-img" src="../../../../assets/clothes/serdika.jpg" alt="MALL SERDIKA" />
     <img class="mall-img" src="../../../../assets/clothes/paradise.jpg" alt="MALL PARADISE" />
@@ -12,10 +12,13 @@
     <img class="mall-img" src="../../../../assets/clothes/varna.jpg" alt="MALL VARNA" />
     <img class="mall-img" src="../../../../assets/clothes/burgas.jpg" alt="MALL BURGAS" />
     <img class="mall-img" src="../../../../assets/clothes/zagora.jpg" alt="MALL STARA ZAGORA" />
-  </div>
-  <ul>
-    <li *ngFor="let item of this.clothesService.resultItems">
-      {{ item }}
+  </div> -->
+  <ul class="shop-box">
+    <li *ngFor="let item of this.clothesService.filters">
+      <img class="mall-img" src= {{item}}/>
+      <h2>{{item.shopName}}</h2>
+      <h2>{{item.discount}}</h2>
     </li>
   </ul>
+  <button (click)="onChange()" >Click me</button>
 </div>
