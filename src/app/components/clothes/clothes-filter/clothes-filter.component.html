@@ -26,15 +26,21 @@
 
   <h2>Location:</h2>
   <div>
-    <input type="checkbox" value="Sofia"/> Sofia
+    <input type="checkbox" value="Sofia"
+	(click)="this.clothesService.setFilter('shopNames', 'Serdika', $event.target.checked)"
+	/> Sofia
   </div>
 
   <div>
-    <input type="checkbox" value="Plovdiv"/> Plovdiv
+    <input type="checkbox" value="Plovdiv"
+	(click)="this.clothesService.setFilter('shopNames', 'Plovdiv', $event.target.checked)"
+	/> Plovdiv
   </div>
 
   <div>
-    <input type="checkbox" value="Varna"/> Varna
+    <input type="checkbox" value="Varna" 
+	(click)="this.clothesService.setFilter('shopNames', 'Varna', $event.target.checked)"
+	/> Varna
   </div>
 
   <div>
@@ -47,23 +53,33 @@
 
   <h2>Discount:</h2>
   <div>
-    <input type="checkbox" value="10%"/> 10%
+    <input type="checkbox" value="10%"
+	(click)="this.clothesService.setFilter('discounts', '10%', $event.target.checked)"
+	/> 10%
   </div>
 
   <div>
-    <input type="checkbox" value="15%"/> 15%
+    <input type="checkbox" value="15%"
+	(click)="this.clothesService.setFilter('discounts', '15%', $event.target.checked)"
+	/> 15%
   </div>
 
   <div>
-    <input type="checkbox" value="20%"/> 20%
+    <input type="checkbox" value="20%"
+	(click)="this.clothesService.setFilter('discounts', '20%', $event.target.checked)"
+	/> 20%
   </div>
 
   <div>
-    <input type="checkbox" value="25%"/> 25%
+    <input type="checkbox" value="25%"
+	(click)="this.clothesService.setFilter('discounts', '25%', $event.target.checked)"
+	/> 25%
   </div>
 
   <div>
-    <input type="checkbox" value="30%"/> 30%
+    <input type="checkbox" value="30%"
+	(click)="this.clothesService.setFilter('discounts', '30%', $event.target.checked)"
+	/> 30%
   </div>
 </div>
 
