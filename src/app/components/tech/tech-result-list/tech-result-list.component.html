@@ -6,14 +6,22 @@
   <div class="item-details" *ngIf="this.category.isActive">
     <div class="item-wrapper">
       <p style="color: WHITE" class="info-title">{{ this.category.getItems.title }}</p>
-      <p class="info-descfription">{{ this.category.getItems.text }}</p>
+      <p class="info-description">{{ this.category.getItems.text }}</p>
     </div>
     <img class="info-img" [src]="this.category.getItems.photo" />
-    <select class="contact-us" [(ngModel)]="selectedValue" name="shop">
-      <option *ngFor="let shop of shops" [ngValue]="shop">
+    <select class="contact-us" [(ngModel)]="selectedValue" name="shop" (change)="onChange($event)">
+      <option value="" disabled selected>Select your option</option>
+      <option *ngFor="let shop of shops" [ngValue]="shop.value">
         {{shop.viewValue}}
       </option>
-    </select> 
+    </select>
+  </div>
+  <div class="item-details hidden">
+    <div class="item-wrapper">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book. It has survived not only five centuries, but also the leap into electronic </p>
+      <img src="../../../../assets/tech/technomarket.jpg" alt="pic">
+    </div>
+  </div>
 </div>
-
-

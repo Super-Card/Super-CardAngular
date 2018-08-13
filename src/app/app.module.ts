@@ -44,6 +44,7 @@ import { ContainerFiltersComponent } from './components/beauty/beauty-filters/co
 import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 import { BeautyService } from './services/beauty.service';
 import { ClothesService } from "./services/clothes.service";
+import {PopupModule} from 'ng2-opd-popup';
 
 
 const appRoutes: Routes = [
@@ -64,7 +65,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    PopupModule.forRoot(),
   ],
   declarations: [
     AppComponent,

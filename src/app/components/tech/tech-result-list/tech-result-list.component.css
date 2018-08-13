@@ -24,18 +24,18 @@
 .info-title{
     font-size: 2em;
 }
-.info-descfription{
+.info-description{
     font-size: 2em;
     text-align: start;
     line-height: 1.5em;
     width: 290px;
 }
 .info-img{
-    width: 415px;
-    height: 300px;
+    width: 458px;
+    height: 351px;
     background-position: center;
     background-size: cover;
-    margin-left: 60px;
+    margin-left: 200px;
     margin-top: 40px;
 } 
 h2.result-heading{
@@ -53,11 +53,10 @@ h2.result-heading{
     display: inline-block;
     border-radius: 5px;
     position: absolute;
-    bottom: 262px;
+    bottom: 310px;
     color: white;
     box-shadow: 3px 5px 5px #888888;
 }
-/* .contact-us:hover{
-    color: white;
-    cursor: pointer;
-} */
+.hidden{
+    display: none;
+}

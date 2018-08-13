@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Popup} from 'ng2-opd-popup';
 @Component({
   selector: 'app-newsletter',
   templateUrl: './newsletter.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsletterComponent implements OnInit {
 
-  constructor() { }
-  testAlert() {
-    alert("Newsletter event works");
+  constructor(private popup:Popup) { }
+  ClickButton(){
+this.popup.options = {
+  widthProsentage: 15,
+  showButtons: false,
+  header: "Sign up for our Newsletter!",
+}
+this.popup.show(this.popup.options);
   }
   ngOnInit() {
   }
