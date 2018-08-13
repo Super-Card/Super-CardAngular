@@ -3,7 +3,7 @@
   height: 350px;
   width: 750px;
   margin: 0 auto;
-  margin-top:100px;
+  margin-top: 100px;
 }
 
 h1 {
@@ -27,9 +27,15 @@ h1 {
   width: 160px;
   border-radius: 5px;
   background-color: blue;
-  color: white;
+  color: yellow;
 }
 
 .green-heading {
-  color: green
+  color: green;
+}
+
+.centered {
+  text-align: center;
+  margin-top: 35px;
+  margin: 5px;
 }

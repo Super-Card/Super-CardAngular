@@ -43,6 +43,7 @@ import { HomeService } from './services/home.service';
 import { ContainerFiltersComponent } from './components/beauty/beauty-filters/container-filters/container-filters.component';
 import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 import { BeautyService } from './services/beauty.service';
+import {PopupModule} from 'ng2-opd-popup';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -62,7 +63,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    PopupModule.forRoot(),
   ],
   declarations: [
     AppComponent,
