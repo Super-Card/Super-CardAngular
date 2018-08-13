@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DatePicker } from 'angular2-datetimepicker';
 import { Restaurants } from '../../../../services/restaurants.service';
 
 @Component({
@@ -8,7 +7,6 @@ import { Restaurants } from '../../../../services/restaurants.service';
   styleUrls: ['./select-date.component.css']
 })
 export class SelectDateComponent implements OnInit {
-
   
   date: Date = new Date();
   settings = {
