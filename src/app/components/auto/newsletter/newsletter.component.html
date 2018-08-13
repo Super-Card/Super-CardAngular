@@ -1,3 +1,7 @@
-<button (click)="testAlert()">
-  Sign up for our Newsletter!
-</button>
+<popup>
+  <form #f="ngForm" (ngSubmit)="onSubmit()" novalidate>
+      <input type="email"/>
+      <button>Submit</button>
+    </form>
+</popup>
+<button class="submit" (click)="ClickButton()">Sign up for our Newsletter </button>
