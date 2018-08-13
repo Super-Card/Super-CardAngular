@@ -50,8 +50,44 @@ export class ClothesService {
       array.splice(array.indexOf(filter), 1)
     }
   } */
+
   
+  /* 
+  filters: string[] = [];
+ 
+  add(filter: string) {
+    this.filters.push(filter);
+    console.log(this.filters);
+  }
+
+  clear() {
+    this.filters = [];
+
+    
+  filters = { discounts: [], shopNames: [] };
   
+  setFilter(type: string, filter: string, isChecked: boolean) {
+    if (isChecked) {
+      this.filters[type].push(filter);
+    } else {
+      let array = this.filters[type];
+      array.splice(array.indexOf(filter), 1)
+    }
+  } 
+  }
+   */
+  public filters: string[] = [];
+  
+  add(filter: string) {
+    this.filters.push(filter);
+    console.log(this.filters);
+  }
+
+  clear(filter: string) {
+    this.resultItems = [];
+    console.log(this.resultItems)
+  }
+
   resultItems = [
     {
       id: 1,
@@ -67,8 +103,8 @@ export class ClothesService {
     },
     {
       id: 1,
-      shopImage: '../../assets/clothes/plovdiv.jpg',
-      shopName: 'Plovdid',
+      shopImage: '../../assets/clothes/plovdiv.jpeg',
+      shopName: 'Plovdiv',
       discount: '20%'
     },
     {
@@ -91,5 +127,7 @@ export class ClothesService {
     }
  
   ];
-
 }
+
+ 
+

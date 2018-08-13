@@ -27,28 +27,30 @@
   <h2>Location:</h2>
   <div>
     <input type="checkbox" value="Sofia"
-	(click)="this.clothesService.setFilter('shopNames', 'Serdika', $event.target.checked)"
+    (click)="this.clothesService.add('../../assets/clothes/serdika.jpg')"
 	/> Sofia
   </div>
 
   <div>
     <input type="checkbox" value="Plovdiv"
-	(click)="this.clothesService.setFilter('shopNames', 'Plovdiv', $event.target.checked)"
+    (click)="this.clothesService.add('../../assets/clothes/plovdiv.jpeg')"
 	/> Plovdiv
   </div>
 
   <div>
     <input type="checkbox" value="Varna" 
-	(click)="this.clothesService.setFilter('shopNames', 'Varna', $event.target.checked)"
+    (click)="this.clothesService.add('../../assets/clothes/varna.jpg')"
 	/> Varna
   </div>
 
   <div>
-    <input type="checkbox" (click)="this.clothesService.add('Burgas')" value="Burgas"/> Burgas
+    <input type="checkbox" (click)="this.clothesService.add('../../assets/clothes/burgas.jpg')" value="Burgas"/> Burgas
   </div>
 
   <div>
-    <input type="checkbox" (click)="this.clothesService.add('Stara Zagora')" value="Stara Zagora"/> Stara Zagora
+    <input type="checkbox" (click)="this.clothesService.add('../../assets/clothes/serdika.jpg')" 
+    (dblclick)="this.clothesService.clear()" 
+    value="Stara Zagora"/> Stara Zagora
   </div>
 
   <h2>Discount:</h2>
@@ -80,6 +82,10 @@
     <input type="checkbox" value="30%"
 	(click)="this.clothesService.setFilter('discounts', '30%', $event.target.checked)"
 	/> 30%
+  </div>
+
+  <div>
+    <button (click)="this.clothesService.clear()">Clear</button>
   </div>
 </div>
 
