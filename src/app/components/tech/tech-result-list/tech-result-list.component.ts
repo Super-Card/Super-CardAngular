@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {TechService} from '../../../services/tech.service';
+import { TechService } from '../../../services/tech.service';
 
 @Component({
   selector: 'app-tech-result-list',
@@ -8,17 +8,27 @@ import {TechService} from '../../../services/tech.service';
 })
 export class TechResultListComponent implements OnInit {
 
-  constructor(private category :TechService) { }
+  constructor(private category: TechService) { }
+
+  ngOnChanges() {
+    console.log(this.selectedValue);
+  }
 
   ngOnInit() {
   }
-    shops: Array<Object> = [
-      {value:'selected',viewValue:'Make your choise'},
-      {value:'technomarket',viewValue:'Technomarket'},
-      {value:'technopolis',viewValue:'Technopolis'},
-      {value:'madia-markt',viewValue:'Media Market'},
-      {value:'inter-techno',viewValue:'InterTecno'},
-      {value:'electronica',viewValue:'Electronica'},
-    ]
-    selectedValue = this.shops[0];
+
+  onChange(ev) {
+    console.log(this.selectedValue);
+    this.selectedValue = ev.target.value;
+    console.log(this.selectedValue);
+  }
+
+  shops: Array<Object> = [
+    { value: 'technomarket', viewValue: 'Technomarket' },
+    { value: 'technopolis', viewValue: 'Technopolis' },
+    { value: 'madia-markt', viewValue: 'Media Market' },
+    { value: 'inter-techno', viewValue: 'InterTecno' },
+    { value: 'electronica', viewValue: 'Electronica' }
+  ]
+  selectedValue = '';
 }
