@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DatePicker } from 'angular2-datetimepicker';
+import { Restaurants } from '../../../../services/restaurants.service';
 
 @Component({
   selector: 'app-select-date',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectDateComponent implements OnInit {
 
+  
   date: Date = new Date();
   settings = {
       bigBanner: false,
@@ -14,8 +17,9 @@ export class SelectDateComponent implements OnInit {
       format: 'dd-MM-yyyy',
       defaultOpen: false
   }
-    
-  constructor() { }
+
+  constructor(private restaurants:Restaurants) { 
+  }
 
   ngOnInit() {
   }

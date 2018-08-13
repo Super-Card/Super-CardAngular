@@ -1,1 +1,6 @@
-<angular2-date-picker [(ngModel)]="date" placeholder='Select date' [settings]="settings"></angular2-date-picker>
+<angular2-date-picker 
+    (onDateSelect)="this.restaurants.setSelectedDate($event)"
+    [(ngModel)]="date" 
+    placeholder='Select date' 
+    [settings]="settings"
+></angular2-date-picker>
