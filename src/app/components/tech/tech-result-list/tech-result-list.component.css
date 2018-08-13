@@ -55,6 +55,7 @@ h2.result-heading{
     position: absolute;
     bottom: 262px;
     color: white;
+    box-shadow: 3px 5px 5px #888888;
 }
 /* .contact-us:hover{
     color: white;
