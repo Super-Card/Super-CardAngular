@@ -41,6 +41,15 @@
   color: #1C51C2;
 }
 
+.navbar-angular {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background-image: url("http://localhost:4200/assets/angular-logo.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .navbar-links {
   display: flex;
   flex-direction: row;
