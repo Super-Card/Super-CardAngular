@@ -44,13 +44,16 @@
   </div>
 
   <div>
-    <input type="checkbox" (click)="this.clothesService.add('../../assets/clothes/burgas.jpg')" value="Burgas"/> Burgas
+    <input type="checkbox" value="Burgas"
+    (click)="this.clothesService.add('../../assets/clothes/burgas.jpg')"
+    /> Burgas
   </div>
 
   <div>
-    <input type="checkbox" (click)="this.clothesService.add('../../assets/clothes/serdika.jpg')" 
-    (dblclick)="this.clothesService.clear()" 
-    value="Stara Zagora"/> Stara Zagora
+    <input type="checkbox" 
+    value="Stara Zagora"
+    (click)="this.clothesService.add('../../assets/clothes/zagora.jpg')"
+    /> Stara Zagora
   </div>
 
   <h2>Discount:</h2>
