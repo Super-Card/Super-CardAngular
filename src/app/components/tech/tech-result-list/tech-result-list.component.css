@@ -64,3 +64,7 @@ h2.result-heading{
     width: 70%;
     height: 74%;
 }
+.selected-desc{
+    font-size: 1.3em;
+    color: white;
+}
