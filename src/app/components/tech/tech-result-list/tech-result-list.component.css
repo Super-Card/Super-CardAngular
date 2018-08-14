@@ -60,3 +60,7 @@ h2.result-heading{
 .hidden{
     display: none;
 }
+.selected-img{
+    width: 70%;
+    height: 74%;
+}

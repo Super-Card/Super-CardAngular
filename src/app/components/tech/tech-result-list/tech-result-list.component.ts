@@ -18,9 +18,10 @@ export class TechResultListComponent implements OnInit {
   }
 
   onChange(ev) {
-    console.log(this.selectedValue);
-    this.selectedValue = ev.target.value;
-    console.log(this.selectedValue);
+    // console.log(this.selectedValue);
+    // this.selectedValue = ev.target.value;
+    let myClass = this.selectedValue==='technomarket'? 'active': 'hidden';
+    console.log(myClass);
   }
 
   shops: Array<Object> = [
