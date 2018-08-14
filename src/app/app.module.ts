@@ -29,7 +29,6 @@ import { ResultListComponent } from './components/beauty/beauty-filters-result/r
 import {RequestModalComponent} from './components/home-content/request-modal/request-modal.component';
 import { TechListComponent } from './components/tech/categories/tech-list/tech-list.component';
 import { ClothesShopsComponent } from './components/clothes/clothes-shops/clothes-shops.component';
-import { CountdownComponent } from './components/auto/countdown/countdown.component';
 import { CardCheckComponent } from './components/auto/card-check/card-check.component';
 import { NewsletterComponent } from './components/auto/newsletter/newsletter.component';
 import { Restaurants } from './services/restaurants.service';
@@ -95,7 +94,6 @@ const appRoutes: Routes = [
     ResultListComponent,
     TechListComponent,
     ClothesShopsComponent,
-    CountdownComponent,
     CardCheckComponent,
     NewsletterComponent,
     TechResultListComponent,
