@@ -35,7 +35,7 @@
     height: 351px;
     background-position: center;
     background-size: cover;
-    margin-left: 200px;
+    margin-left: 8%;
     margin-top: 40px;
 } 
 h2.result-heading{
@@ -48,7 +48,7 @@ h2.result-heading{
 }
 .contact-us{
     background-color: #1C51C2;
-    padding: 15px;
+    padding: 10px;
     font-size: 1.2em;
     display: inline-block;
     border-radius: 5px;
@@ -63,6 +63,8 @@ h2.result-heading{
 .selected-img{
     width: 70%;
     height: 74%;
+    box-shadow: 3px 5px 5px #888888;
+    border-radius: 10px;
 }
 .selected-desc{
     font-size: 1.3em;
