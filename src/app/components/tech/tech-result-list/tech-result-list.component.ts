@@ -10,18 +10,12 @@ export class TechResultListComponent implements OnInit {
 
   constructor(private category: TechService) { }
 
-  ngOnChanges() {
-    console.log(this.selectedValue);
-  }
-
+  
   ngOnInit() {
   }
 
   onChange(ev) {
-    // console.log(this.selectedValue);
-    // this.selectedValue = ev.target.value;
-    let myClass = this.selectedValue==='technomarket'? 'active': 'hidden';
-    console.log(myClass);
+    
   }
 
   shops: Array<Object> = [
