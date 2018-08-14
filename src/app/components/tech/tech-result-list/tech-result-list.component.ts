@@ -10,17 +10,12 @@ export class TechResultListComponent implements OnInit {
 
   constructor(private category: TechService) { }
 
-  ngOnChanges() {
-    console.log(this.selectedValue);
-  }
-
+  
   ngOnInit() {
   }
 
   onChange(ev) {
-    console.log(this.selectedValue);
-    this.selectedValue = ev.target.value;
-    console.log(this.selectedValue);
+    
   }
 
   shops: Array<Object> = [
