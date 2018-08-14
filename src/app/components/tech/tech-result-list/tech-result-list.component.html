@@ -10,7 +10,7 @@
     </div>
     <img class="info-img" [src]="this.category.getItems.photo" />
     <select class="contact-us" [(ngModel)]="selectedValue" name="shop" (change)="onChange($event)">
-      <option value="" selected>Select your shops</option>
+      <option value="" selected>Select your shop</option>
       <option *ngFor="let shop of shops" [ngValue]="shop.value">
         {{shop.viewValue}}
       </option>
