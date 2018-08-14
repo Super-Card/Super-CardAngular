@@ -22,8 +22,8 @@ export class TechResultListComponent implements OnInit {
     { value: 'technomarket', viewValue: 'Technomarket' },
     { value: 'technopolis', viewValue: 'Technopolis' },
     { value: 'madia-markt', viewValue: 'Media Market' },
-    { value: 'inter-techno', viewValue: 'InterTecno' },
-    { value: 'electronica', viewValue: 'Electronica' }
+    { value: 'techmart', viewValue: 'TechMart' },
+    { value: 'technika', viewValue: 'Technika' }
   ]
   selectedValue = '';
 }
